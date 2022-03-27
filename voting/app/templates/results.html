@@ -1,0 +1,10 @@
+<html>
+  <div>
+    {% for key, value in candidates.items%}
+      <ul>
+        {{ value.name }}
+        {{ value.votes }}
+      </ul>
+    {% endfor %}
+  </div>
+</html>

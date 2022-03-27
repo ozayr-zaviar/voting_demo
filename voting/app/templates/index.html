@@ -1,0 +1,11 @@
+<html>
+  <div>
+    {% for candidate in candidates %}
+      <ul>
+        {{ candidate.name }}
+        {{ candidate.party }}
+        <button onclick="location.href='http://localhost:8000/app/{{ candidate.id }}'">vote</button>
+      </ul>
+    {% endfor %}
+  </div>
+</html>
